@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -51,7 +50,6 @@ class _FetchDataState extends State<FetchData> {
                 children: [
                   for (int i = 0; i < listResponse!.length; i++) ...[
                     Container(
-                      // height: 200,
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
@@ -63,7 +61,6 @@ class _FetchDataState extends State<FetchData> {
                               children: [
                             Container(
                                 margin: const EdgeInsets.only(bottom: 5),
-                                // alignment: Alignment.center,
                                 height: 100,
                                 width: double.infinity,
                                 decoration: BoxDecoration(
@@ -75,7 +72,6 @@ class _FetchDataState extends State<FetchData> {
                                 ),
                                 child: const Text('')),
                             Container(
-                                // margin: const EdgeInsets.only(top: 7),
                                 alignment: Alignment.centerLeft,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 15),
