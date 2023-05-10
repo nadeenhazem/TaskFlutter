@@ -77,7 +77,7 @@ class _FetchDataState extends State<FetchData> {
                                   padding: const EdgeInsets.only(left: 15),
                                   child: Text(
                                     listResponse![i]['title'],
-                                    style: const TextStyle(fontSize: 18),
+                                    style: const TextStyle(fontSize: 16),
                                   ),
                                 )),
                             const SizedBox(height: 10),
@@ -86,14 +86,14 @@ class _FetchDataState extends State<FetchData> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
-                                    padding: const EdgeInsets.all(6),
+                                    padding: const EdgeInsets.all(5),
                                     margin: const EdgeInsets.only(left: 15),
                                     decoration: BoxDecoration(
                                         color: const Color(0XFF33907C),
                                         borderRadius: BorderRadius.circular(7)),
                                     child: const Icon(
                                       Icons.shopping_cart_outlined,
-                                      size: 20,
+                                      size: 18,
                                       color: Colors.white,
                                     ),
                                   ),
@@ -102,7 +102,7 @@ class _FetchDataState extends State<FetchData> {
                                       child: Text(
                                         '${listResponse![i]['price']}\$',
                                         style: const TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.w500,
                                             color: Color(0XFF33907C)),
                                       ))
